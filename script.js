@@ -225,30 +225,6 @@ async function main() {
         window.open(twitterShareUrl, 'twitter-share-dialog');  // Open the share dialog in a new window
         return false;  // Prevent the default link click behavior
     };
-    
-    document.getElementById('whatsapp-share-button').onclick = function() {
-        let url = window.location.href;  // Get the current page URL
-        let text = "Check out this awesome song!";  // The text for the WhatsApp message
-        let whatsappShareUrl = "https://wa.me/?text=" + encodeURIComponent(text + " " + url);  // Create the WhatsApp share URL
-        window.open(whatsappShareUrl, 'whatsapp-share-dialog');  // Open the share dialog in a new window
-        return false;  // Prevent the default link click behavior
-    };
-
-    document.getElementById('linkedin-share-button').onclick = function() {
-        let url = window.location.href;  // Get the current page URL
-        let text = "Check out this awesome song!";  // The text for the LinkedIn post
-        let linkedinShareUrl = "https://www.linkedin.com/" + encodeURIComponent(url);  // Create the LinkedIn share URL
-        window.open(linkedinShareUrl, 'linkedin-share-dialog');  // Open the share dialog in a new window
-        return false;  // Prevent the default link click behavior
-    };
-
-    document.getElementById('youtube-share-button').onclick = function() {
-        let url = window.location.href;  // Get the current page URL
-        let text = "Check out this awesome song!";  // The text for the LinkedIn post
-        let youtubeShareUrl = "https://www.youtube.com/" + encodeURIComponent(url);  // Create the Youtube share URL
-        window.open(youtubeShareUrl, 'youtube-share-dialog');  // Open the share dialog in a new window
-        return false;  // Prevent the default link click behavior
-    };
 
     document.getElementById('instagram-share-button').onclick = function() {
         let url = window.location.href;  // Get the current page URL
@@ -257,18 +233,6 @@ async function main() {
         window.open(instagramShareUrl, 'instagram-share-dialog');  // Open the share dialog in a new window
         return false;  // Prevent the default link click behavior
     };
-
-    document.getElementById('telegram-share-button').onclick = function() {
-        let url = window.location.href;  // Get the current page URL
-        let text = "Check out this awesome song!";  // The text for the Telegram post
-        let telegramShareUrl = "https://web.telegram.org/k/" + encodeURIComponent(url);  // Create the Telegram share URL
-        window.open(telegramShareUrl, 'telegram-share-dialog');  // Open the share dialog in a new window
-        return false;  // Prevent the default link click behavior
-    };
-
-    // for feedback
-    
-    
 
     // Add event listner to mute the track
     document.querySelector(".volume>img").addEventListener("click", e => {
