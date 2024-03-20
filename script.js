@@ -119,9 +119,6 @@ async function main() {
     document.querySelector(".hamburger").addEventListener("click", () => {
         document.querySelector(".left").style.left = "0"
     })
-    document.querySelector(".hamburger").addEventListener("touchstart", () => {
-        document.querySelector(".left").style.left = "0";
-    });
 
     // Add an event listener for close button
     document.querySelector(".close").addEventListener("click", () => {
