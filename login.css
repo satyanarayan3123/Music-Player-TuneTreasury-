@@ -117,3 +117,9 @@ body {
 .register-link p a:hover {
   text-decoration: underline;
 }
+
+@media (max-width:530px) and (min-width:200px){
+  .wrapper{
+      width: 370px;
+  }
+}
